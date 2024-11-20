@@ -1,0 +1,85 @@
+/* Grundinställningar */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #1a1a1a;
+  color: rgb(133, 59, 11);
+  margin: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 340px;
+  margin: 0 auto;
+  background: #333;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+/* Display-stil */
+#display {
+  width: 82%;
+  height: 60px;
+  background: #2a2f27; /* Mörkgrön retrofärg */
+  color: #00ff00; /* Neonliknande grön text */
+  text-align: right;
+  font-size: 2em;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.7), inset -2px -2px 5px rgba(255, 255, 255, 0.1);
+}
+
+/* Kalkylatorens container */
+.calc-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  max-width: 300px;
+}
+
+/* Knapparnas stil */
+button {
+  background: #444;
+  color: #fff;
+  font-size: 1.5em;
+  border: 2px solid #333;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6), inset 1px 1px 3px rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  transition: background 0.1s ease, transform 0.1s ease;
+}
+
+/* Hover och aktiv effekt för knappar */
+button:hover {
+  background: #555;
+}
+
+button:active {
+  background: #333;
+  transform: translateY(2px); /* Tryck-in effekt för knapp */
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8), inset -1px -1px 3px rgba(0, 0, 0, 0.6);
+}
+
+/* Anpassning av vissa knappar */
+#C, #divide, #multiplication, #delete, #procent {
+  background: #666; /* Annan färg för funktionsknappar */
+  color: #00ff00; /* Retro orangefärg */
+}
+
+#equell {
+  grid-row: span 2;
+  background: #00ff00;
+  color: #333;
+  font-weight: bold;
+  font-size: 1.8em;
+  border-radius: 20px;
+}
